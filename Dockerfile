@@ -3,5 +3,5 @@ COPY * /opt/app/
 WORKDIR /opt/app
 EXPOSE 8080
 RUN bash -c 'java HelloWorldApp'
-ENTRYPOINT ["tailf", "/var/log/syslog"]
+ENTRYPOINT ["tailf", "/var/log/lastlog"]
 
